@@ -1,11 +1,11 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror
-TARGET = scheduler
+TARGET = Q1
 
 all: $(TARGET)
 
-$(TARGET): src/scheduler.c
-	$(CC) $(CFLAGS) src/scheduler.c -o $(TARGET)
+$(TARGET): src/Q1.c
+	$(CC) $(CFLAGS) src/Q1.c -o $(TARGET)
 
 clean:
 	rm -f $(TARGET)
